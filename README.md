@@ -10,8 +10,10 @@ These are the technologies used in project:
 4) devise (Login)
 5) pundit (Authorization)
 6) pg_search (Searching)
-7) bootstrap (Styling)
-8) bubbly-bg (animated background)
+7) geocoder (Geocoding)
+8) mapbox (Map display)
+9) bootstrap (Styling)
+10) bubbly-bg (animated background)
 
 ---------
 
