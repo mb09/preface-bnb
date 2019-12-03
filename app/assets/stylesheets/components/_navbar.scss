@@ -18,6 +18,10 @@
 
 .navbar-preface .navbar-collapse {
     flex-grow: 0;
+    &.show, &.collapsing{
+        background-color: $brand-dark;
+        padding: 0px 20px;
+    }
 }
 
 .navbar-preface .navbar-brand img {
