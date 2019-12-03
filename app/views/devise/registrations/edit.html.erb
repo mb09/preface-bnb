@@ -1,5 +1,5 @@
 <div class="container py-4">
-  <h2>Edit <%= resource_name.to_s.humanize %></h2>
+  <h2>User Profile</h2>
 
   <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
     <%= f.error_notification %>
@@ -10,6 +10,8 @@
       <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
         <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
       <% end %>
+
+      <h3 class="mt-5">Password</h3>
 
       <%= f.input :password,
                   hint: "leave it blank if you don't want to change it",
