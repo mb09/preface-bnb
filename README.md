@@ -9,8 +9,9 @@ These are the technologies used in project:
 3) Lewagon devise template (https://github.com/lewagon/rails-templates)
 4) devise (Login)
 5) pundit (Authorization)
-6) bootstrap (Styling)
-7) bubbly-bg (animated background)
+6) pg_search (Searching)
+7) bootstrap (Styling)
+8) bubbly-bg (animated background)
 
 ---------
 
