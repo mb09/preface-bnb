@@ -2,7 +2,11 @@ class FlatsController < ApplicationController
   before_action :set_flat, only: [:show, :edit, :update, :destroy]
 
   def index
-    @flats = policy_scope(Flat)
+    if params[:query].present?
+      @flats = policy_scope(Flat).search_by_name_and_description_and_address(params[:query])
+    else
+      @flats = policy_scope(Flat)
+    end
   end
 
   def show

@@ -1,9 +1,13 @@
 <div class="flat_listing">
-  <div class="row">
-    <% flats.each do |flat| %>
-      <div class="col-sm-6 col-lg-4">
-        <%= render "flats/flat_card", :flat => flat %>
-      </div>
-    <% end %>
-  </div>
+	<%= form_tag flats_path, method: :get, class:"w-100 form-inline mb-4" do %>
+		<%= text_field_tag :query, params[:query], class: "form-control form-control-lg flex-grow-1", placeholder: "Find a flat" %>
+		<%= submit_tag "Search", class: "btn btn-lg btn-primary" %>
+	<% end %>
+    <div class="row">
+        <% flats.each do |flat| %>
+        <div class="col-sm-6 col-lg-4">
+            <%= render "flats/flat_card", :flat => flat %>
+        </div>
+        <% end %>
+    </div>
 </div>
