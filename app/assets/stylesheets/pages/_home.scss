@@ -12,10 +12,20 @@
         background-color: $brand-dark;
         color: $brand-light;
 
-
         img{
             width: 150px;
             height: auto;
         }
+    }
+
+    .foreground{
+        position: relative;
+        text-align: center;
+    }
+
+    .bubbly{
+        position: absolute;
+        width: 100%;
+        height: 100%;
     }
 }
