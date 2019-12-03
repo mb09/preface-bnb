@@ -27,11 +27,10 @@ class FlatsController < ApplicationController
   end
 
   def update
-      if @flat.update(flat_params)
-        redirect_to @flat, notice: 'Flat was successfully updated.'
-      else
-        render :edit
-      end
+    if @flat.update(flat_params)
+      redirect_to @flat, notice: 'Flat was successfully updated.'
+    else
+      render :edit
     end
   end
 
