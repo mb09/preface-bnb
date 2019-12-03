@@ -1,6 +1,6 @@
 <div class="flat_listing">
 	<%= form_tag flats_path, method: :get, class:"w-100 form-inline mb-4" do %>
-		<%= text_field_tag :query, params[:query], class: "form-control form-control-lg flex-grow-1", placeholder: "Find a flat" %>
+		<%= text_field_tag :query, params[:query], class: "form-control form-control-lg flex-grow-1 flex-shrink-1", style:"width: 100px !important;", placeholder: "Find a flat" %>
 		<%= submit_tag "Search", class: "btn btn-lg btn-primary" %>
 	<% end %>
     <div class="row">
