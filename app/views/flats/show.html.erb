@@ -11,7 +11,7 @@
     </div>
   </div>
   
-  <% if @flat.user == current_user %>
+  <% if policy(@flat).edit? %>
     <%= link_to 'Edit Listing', edit_flat_path(@flat), class:"btn btn-secondary btn-pill mr-4" %>
   <% end %>
   <%= link_to 'Back', flats_path, class:"btn btn-primary btn-pill" %>

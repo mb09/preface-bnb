@@ -15,9 +15,11 @@
         <li class="nav-item active">
           <%= link_to "View listing", flats_path, class: "nav-link" %>
         </li>
-        <li class="nav-item">
-          <%= link_to "Host a flat", new_flat_path, class: "nav-link" %>
-        </li>
+        <% if policy(Flat).create? %>
+          <li class="nav-item">
+            <%= link_to "Host a flat", new_flat_path, class: "nav-link" %>
+          </li>
+        <% end %>
         <li class="nav-item dropdown">
           <%#= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
           <a ref="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><%= current_user.email %></a>

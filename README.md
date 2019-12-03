@@ -8,8 +8,9 @@ These are the technologies used in project:
 2) Rails 5.2.4
 3) Lewagon devise template (https://github.com/lewagon/rails-templates)
 4) devise (Login)
-5) bootstrap (Styling)
-6) bubbly-bg (animated background)
+5) pundit (Authorization)
+6) bootstrap (Styling)
+7) bubbly-bg (animated background)
 
 ---------
 

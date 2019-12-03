@@ -2,7 +2,7 @@ class FlatsController < ApplicationController
   before_action :set_flat, only: [:show, :edit, :update, :destroy]
 
   def index
-    @flats = Flat.all
+    @flats = policy_scope(Flat)
   end
 
   def show
@@ -10,6 +10,7 @@ class FlatsController < ApplicationController
 
   def new
     @flat = Flat.new
+    authorize @flat
   end
 
   def edit
@@ -42,6 +43,7 @@ class FlatsController < ApplicationController
   private
     def set_flat
       @flat = Flat.find(params[:id])
+      authorize @flat
     end
 
     def flat_params
