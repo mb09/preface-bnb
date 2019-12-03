@@ -10,6 +10,8 @@ class FlatsController < ApplicationController
   end
 
   def show
+    @center = [@flat.longitude, @flat.latitude]
+    @marker = [{latitude: @flat.latitude, longitude: @flat.longitude}]
   end
 
   def new
