@@ -4,12 +4,12 @@ Hey everyone, this is an example for the final project.
 
 These are the technologies used in project:
 
-Ruby 2.6.3
-Rails 5.2.4
-Lewagon devise template (https://github.com/lewagon/rails-templates)
-Devise (Login)
-Bootstrap (Styling)
-Bubbly (animated background)
+1) Ruby 2.6.3
+2) Rails 5.2.4
+3) Lewagon devise template (https://github.com/lewagon/rails-templates)
+4) Devise (Login)
+5) Bootstrap (Styling)
+6) Bubbly (animated background)
 
 ---------
 
