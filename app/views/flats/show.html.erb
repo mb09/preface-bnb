@@ -1,0 +1,16 @@
+<div class="container py-4">
+  <div class="flat_details">
+    <%= cl_image_tag @flat.photo, width: 800, height: 450, crop: :fill %>
+    <div class="details">
+      <h1><%= @flat.name %></h1>
+      <p><%= @flat.description %></p>
+      <h4>Address</h4>
+      <p><%= @flat.address %></p>
+      <h4>Host</h4>
+      <p><%= @flat.host.email %></p>
+    </div>
+  </div>
+
+  <%= link_to 'Back', flats_path, class:"btn btn-primary" %>
+</div>
+

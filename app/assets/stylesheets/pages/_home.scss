@@ -1,1 +1,21 @@
 // Specific CSS for your home-page
+.home_page {
+    .hero {
+    	position: relative;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        background-color: $brand-dark;
+        color: $brand-light;
+
+
+        img{
+            width: 150px;
+            height: auto;
+        }
+    }
+}

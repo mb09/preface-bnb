@@ -1,0 +1,9 @@
+<div class="flat_card">
+	<%= link_to flat_path(flat) do %>
+	  	<%= cl_image_tag flat.photo, width: 500, height: 200, crop: :fill %>
+	  	<div class="details">
+			<h1><%= flat.name %></h1>
+			<p><%= flat.description %></p>
+		</div>
+	<% end %>
+</div>

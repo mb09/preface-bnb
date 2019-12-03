@@ -1,2 +1,12 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="home_page">
+	
+	<section class="hero">
+		<%= image_tag "shared/logo.png", alt: "Logo" %>
+		<h4>a coder friendly alternative for BnB</h4>
+	</section>
+
+	<section class="listing">
+		<%= render "flats/flat_listing", :flats => @flats %>
+	</section>
+	
+</div>
