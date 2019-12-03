@@ -1,5 +1,6 @@
 <div class="container py-4">
-	<h1>Edit Listing</h1>
+	<h1>Edit <%= @flat.name %></h1>
+	<h4>Hosted by <%= @flat.user.email %></h4>
 
 	<%= render 'form', flat: @flat %>
 	<%= link_to 'Back', @flat, class: "btn btn-secondary my-4 btn-pill" %>
