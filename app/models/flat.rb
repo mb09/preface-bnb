@@ -1,4 +1,4 @@
 class Flat < ApplicationRecord
-  belongs_to :host, class_name: 'User'
+  belongs_to :user
   mount_uploader :photo, PhotoUploader
 end

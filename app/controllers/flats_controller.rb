@@ -25,7 +25,7 @@ class FlatsController < ApplicationController
   # POST /flats.json
   def create
     @flat = Flat.new(flat_params)
-    @flat.host = current_user
+    @flat.user = current_user
 
     respond_to do |format|
       if @flat.save

@@ -7,11 +7,11 @@
       <h4>Address</h4>
       <p><%= @flat.address %></p>
       <h4>Host</h4>
-      <p><%= @flat.host.email %></p>
+      <p><%= @flat.user.email %></p>
     </div>
   </div>
   
-  <% if @flat.host == current_user %>
+  <% if @flat.user == current_user %>
     <%= link_to 'Edit Listing', edit_flat_path(@flat), class:"btn btn-secondary btn-pill mr-4" %>
   <% end %>
   <%= link_to 'Back', flats_path, class:"btn btn-primary btn-pill" %>
