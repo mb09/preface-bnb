@@ -7,9 +7,9 @@ These are the technologies used in project:
 1) Ruby 2.6.3
 2) Rails 5.2.4
 3) Lewagon devise template (https://github.com/lewagon/rails-templates)
-4) Devise (Login)
-5) Bootstrap (Styling)
-6) Bubbly (animated background)
+4) devise (Login)
+5) bootstrap (Styling)
+6) bubbly-bg (animated background)
 
 ---------
 
